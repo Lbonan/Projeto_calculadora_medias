@@ -47,7 +47,7 @@ function atualizaLinha() {
 function mediaFinal() {
   const mediaFinal = calculaMediaFinal();
 
-  document.getElementById("media-final-nota").innerHTML = mediaFinal;
+  document.getElementById("media-final-nota").innerHTML = mediaFinal.toFixed(2);
   document.getElementById("media-final-valor").innerHTML = mediaFinal >= notaminima ? spanAprovado : spanReprovado;
 }
 
